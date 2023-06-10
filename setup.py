@@ -1,15 +1,15 @@
 from setuptools import setup
 
 setup(
-    name='your-library',
+    name='transformer-lite',
     version='0.1.0',
     author='Justinas Karaliunas',
-    author_email='your@email.com',
-    description='A short description of your library',
-    long_description='A longer description of your library',
+    author_email='justinas@lorjus.com',
+    description='A tiny library to do basic data transformations',
+    long_description='A tiny library to do basic data transformations on tensors, time series & convolute',
     long_description_content_type='text/markdown',
-    url='https://github.com/your-username/your-library',
-    packages=['your_library'],
+    url='https://github.com/drootf/transformer-lite',
+    packages=['transformer_lite'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',
@@ -21,13 +21,11 @@ setup(
     ],
     python_requires='>=3.6',
     install_requires=[
-        'numpy>=1.18.0',
-        'requests>=2.25.0',
+        'numpy',
     ],
     extras_require={
         'dev': [
-            'pytest>=6.0.0',
-            'coverage>=5.3',
+            'pytest',
         ],
     },
 )

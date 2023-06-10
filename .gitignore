@@ -1,2 +1,4 @@
 *__pycache__/
+*.pytest_cache
 /venv/
+transformer_lite.egg-info
