@@ -29,7 +29,7 @@ def transpose2d(input_matrix: list[list[float]]) -> list:
     return transposed_matrix        
     
 
-def window1d(input_array, size, shift=1, stride=1):
+def window1d(input_array: list | np.ndarray, size: int, shift: int = 1, stride: int = 1) -> list[list | np.ndarray]:    
     """
     Splits a 1D array into windows of a specified size with a given shift and stride.
 
