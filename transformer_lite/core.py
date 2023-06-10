@@ -1,4 +1,4 @@
-from numpy import np
+import numpy as np
 
 def transpose2d(input_matrix: list[list[float]]) -> list:
     """Implement this function using only Python and its standard library."""
