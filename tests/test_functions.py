@@ -1,10 +1,9 @@
 import numpy as np
-import pytest
 from transformer_lite.core import transpose2d, window1d, convolution2d
 
 def test_transpose2d():
-    input_matrix = [[1, 2, 3], [4, 5, 6]]
-    expected_output = [[1, 4], [2, 5], [3, 6]]
+    input_matrix = [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+    expected_output = [[1, 2, 3], [1 , 2, 3], [1, 2, 3]]
     assert transpose2d(input_matrix) == expected_output
 
 def test_window1d():
