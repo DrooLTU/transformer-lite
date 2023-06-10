@@ -27,4 +27,5 @@ setup(
             'pytest',
         ],
     },
+    license='MIT',
 )
