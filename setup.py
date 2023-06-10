@@ -7,7 +7,7 @@ setup(
     description='A tiny library to do basic data transformations',
     long_description='A tiny library to do basic data transformations on tensors, time series & convolute',
     long_description_content_type='text/markdown',
-    url='https://github.com/drootf/transformer-lite',
+    url='https://github.com/drooltu/transformer-lite',
     packages=['transformer_lite'],
     classifiers=[
         'Development Status :: 3 - Alpha',
