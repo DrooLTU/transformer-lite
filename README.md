@@ -4,7 +4,7 @@ Transformer Lite is a Python library that provides lightweight implementations o
 
 ## Installation
 
-You can install Transformer Lite using pip:
+You can install Transformer Lite (https://pypi.org/project/transformer-lite/) using pip:
 
 ```
 pip install transformer-lite
