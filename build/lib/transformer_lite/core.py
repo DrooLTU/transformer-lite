@@ -17,11 +17,8 @@ def transpose2d(input_matrix: list[list[float]]) -> list:
     """
     num_rows = len(input_matrix)
     num_cols = len(input_matrix[0])
-
-    # Create a new matrix with transposed dimensions
     transposed_matrix = [[0] * num_rows for _ in range(num_cols)]
 
-    # Iterate over the input matrix and assign values to the transposed matrix
     for i in range(num_rows):
         for j in range(num_cols):
             transposed_matrix[j][i] = input_matrix[i][j]
@@ -84,30 +81,20 @@ def convolution2d(input_matrix: np.ndarray, kernel: np.ndarray, stride : int = 1
         array([[ 5.,  3.],
                [12.,  6.]])
     """
-    # Get dimensions of input matrix and kernel
+
     input_height, input_width = input_matrix.shape
     kernel_height, kernel_width = kernel.shape
-
-    # Calculate output dimensions
     output_height = (input_height - kernel_height) // stride + 1
     output_width = (input_width - kernel_width) // stride + 1
-
-    # Initialize output matrix
     output_matrix = np.zeros((output_height, output_width))
 
-    # Perform convolution
     for i in range(output_height):
         for j in range(output_width):
-            # Calculate the indices for the current window
             start_row = i * stride
             start_col = j * stride
             end_row = start_row + kernel_height
             end_col = start_col + kernel_width
-
-            # Extract the window from the input matrix
             window = input_matrix[start_row:end_row, start_col:end_col]
-
-            # Perform element-wise multiplication and sum
             output_matrix[i, j] = np.sum(window * kernel)
 
     return output_matrix

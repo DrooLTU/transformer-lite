@@ -1,7 +1,7 @@
 from setuptools import setup
 setup(
     name='transformer-lite',
-    version='0.1.0',
+    version='0.1.1',
     author='Justinas Karaliunas',
     author_email='justinas@lorjus.com',
     description='A tiny library to do basic data transformations',
